@@ -1,5 +1,7 @@
 Style/FrozenStringLiteralComment:
   Enabled: false
+Style/Documentation:
+  Enabled: false
 AllCops:
   NewCops: enable
 Lint/DuplicateRegexpCharacterClassElement: # (new in 1.1)
