@@ -1,5 +1,7 @@
 require 'rulers/version'
 require 'rulers/routing'
+require 'rulers/util'
+require 'rulers/dependencies'
 
 module Rulers
   class Application
@@ -12,7 +14,7 @@ module Rulers
         text = controller.send(act)
         [200, { 'Content-Type' => 'text/html' }, [text]]
       rescue Exception => e
-        [500, { 'Content-Type' => 'text/html' }, ["Something right happened #{e}"]]
+        [500, { 'Content-Type' => 'text/html' }, ["Error 500: #{e}"]]
       end
     end
   end
