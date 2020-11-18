@@ -28,6 +28,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'erubi'
+  spec.add_runtime_dependency 'multi_json'
+  spec.add_runtime_dependency 'pry'
   spec.add_runtime_dependency 'rack'
+
   spec.add_development_dependency 'rack-test'
 end
