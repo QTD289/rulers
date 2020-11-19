@@ -1,5 +1,6 @@
 require 'erubi'
 require 'rulers/file_model'
+require 'pry'
 
 module Rulers
   class Controller
