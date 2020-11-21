@@ -16,7 +16,7 @@ module Rulers
         text = controller.send(act)
         [200, { 'Content-Type' => 'text/html' }, [text]]
       rescue Exception => e
-        [500, { 'Content-Type' => 'text/html' }, ["Error 500: #{e}"]]
+        [500, {}, ["Error 500: #{e}"]]
       end
     end
   end
